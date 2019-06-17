@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="BelleIIvt6" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/XCVR_TOP - XCVR_TOP_connect C:|Users|B1409_Server|Desktop|BelleII_Xilinx|BelleIIvt6127gp|src|XCVR_top.vhd</ClosedNode>
+         <ClosedNode>/XCVR_TOP - XCVR_TOP_connect C:|Users|B1409_Server|Desktop|BelleII_Xilinx|BelleIIvt6127gp|src|XCVR_top.vhd/XCVR_Module_gen - XCVR_8B10B_interconnect - XCVR_8B10B_interconnect_Top/lane_up_and_gate - n_in_1_out_and_gate_1clk - n_in_1_out_and_gate_1clk_RTL</ClosedNode>
+         <ClosedNode>/XCVR_TOP - XCVR_TOP_connect C:|Users|B1409_Server|Desktop|BelleII_Xilinx|BelleIIvt6127gp|src|XCVR_top.vhd/XCVR_Module_gen - XCVR_8B10B_interconnect - XCVR_8B10B_interconnect_Top/manual_rst_and_gate - n_in_1_out_and_gate_1clk - n_in_1_out_and_gate_1clk_RTL</ClosedNode>
+         <ClosedNode>/XCVR_TOP - XCVR_TOP_connect C:|Users|B1409_Server|Desktop|BelleII_Xilinx|BelleIIvt6127gp|src|XCVR_top.vhd/XCVR_Module_gen - XCVR_8B10B_interconnect - XCVR_8B10B_interconnect_Top/rx_traffic_and_gate - n_in_1_out_and_gate - n_in_1_out_and_gate_RTL</ClosedNode>
+         <ClosedNode>/XCVR_TOP - XCVR_TOP_connect C:|Users|B1409_Server|Desktop|BelleII_Xilinx|BelleIIvt6127gp|src|XCVR_top.vhd/XCVR_Module_gen - XCVR_8B10B_interconnect - XCVR_8B10B_interconnect_Top/traffic - traffic - top</ClosedNode>
+         <ClosedNode>/XCVR_TOP - XCVR_TOP_connect C:|Users|B1409_Server|Desktop|BelleII_Xilinx|BelleIIvt6127gp|src|XCVR_top.vhd/XCVR_Module_gen - XCVR_8B10B_interconnect - XCVR_8B10B_interconnect_Top/tx_traffic_and_gate - n_in_1_out_and_gate - n_in_1_out_and_gate_RTL</ClosedNode>
+         <ClosedNode>/XCVR_TOP - XCVR_TOP_connect C:|Users|B1409_Server|Desktop|BelleII_Xilinx|src|XCVR_top.vhd/XCVR_Module_gen - XCVR_8B10B_interconnect - XCVR_8B10B_interconnect_Top/lane_up_and_gate - n_in_1_out_and_gate_1clk - n_in_1_out_and_gate_1clk_RTL</ClosedNode>
+         <ClosedNode>/XCVR_TOP - XCVR_TOP_connect C:|Users|B1409_Server|Desktop|BelleII_Xilinx|src|XCVR_top.vhd/XCVR_Module_gen - XCVR_8B10B_interconnect - XCVR_8B10B_interconnect_Top/manual_rst_and_gate - n_in_1_out_and_gate_1clk - n_in_1_out_and_gate_1clk_RTL</ClosedNode>
+         <ClosedNode>/XCVR_TOP - XCVR_TOP_connect C:|Users|B1409_Server|Desktop|BelleII_Xilinx|src|XCVR_top.vhd/XCVR_Module_gen - XCVR_8B10B_interconnect - XCVR_8B10B_interconnect_Top/rx_traffic_and_gate - n_in_1_out_and_gate - n_in_1_out_and_gate_RTL</ClosedNode>
+         <ClosedNode>/XCVR_TOP - XCVR_TOP_connect C:|Users|B1409_Server|Desktop|BelleII_Xilinx|src|XCVR_top.vhd/XCVR_Module_gen - XCVR_8B10B_interconnect - XCVR_8B10B_interconnect_Top/traffic - traffic - top</ClosedNode>
+         <ClosedNode>/XCVR_TOP - XCVR_TOP_connect C:|Users|B1409_Server|Desktop|BelleII_Xilinx|src|XCVR_top.vhd/XCVR_Module_gen - XCVR_8B10B_interconnect - XCVR_8B10B_interconnect_Top/tx_traffic_and_gate - n_in_1_out_and_gate - n_in_1_out_and_gate_RTL</ClosedNode>
+         <ClosedNode>/XCVR_TOP - XCVR_TOP_connect C:|Users|dzwei|Desktop|test|BelleIIvt6127|src|XCVR_top.vhd/XCVR_Module_gen - XCVR_8B10B_interconnect - XCVR_8B10B_interconnect_Top/traffic - traffic - top</ClosedNode>
+         <ClosedNode>/XCVR_TOP - XCVR_TOP_connect C:|Users|dzwei|Desktop|test|BelleIIvt6|src|XCVR_top.vhd/XCVR_Module_gen - XCVR_8B10B_interconnect - XCVR_8B10B_interconnect_Top/traffic - traffic - top</ClosedNode>
+         <ClosedNode>/XCVR_TOP - XCVR_TOP_connect C:|Users|dzwei|Desktop|ut3GP|src|XCVR_top.vhd/XCVR_Module_gen - XCVR_8B10B_interconnect - XCVR_8B10B_interconnect_Top/traffic - traffic - top</ClosedNode>
+         <ClosedNode>/n_in_1_out_and_gate_1clk - n_in_1_out_and_gate_1clk_RTL C:|Users|B1409_Server|Desktop|BelleII_Xilinx|BelleIIvt6127gp|src|n_in_1_out_and_gate_1clk.vhd</ClosedNode>
+         <ClosedNode>/traffic - top C:|Users|B1409_Server|Desktop|BelleII_Xilinx|BelleIIvt6127gp|src|traffical.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>XCVR_TOP - XCVR_TOP_connect (C:/Users/curlywei/Desktop/openscr_xilinx_1ch_tc/src/XCVR_top.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002d1000000020000000000000000000000000200000064ffffffff000000810000000300000002000002d10000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>XCVR_TOP - XCVR_TOP_connect (C:/Users/curlywei/Desktop/openscr_xilinx_1ch_tc/src/XCVR_top.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000000400000000100000000000000240000000100000000000000680000000100000000000002c60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>chipscope_icon.xco</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Analyze Post-Place &amp; Route Static Timing</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >13</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Analyze Post-Place &amp; Route Static Timing</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_DECL" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_NGC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000019c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000019c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+</Project>

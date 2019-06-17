@@ -1,0 +1,11 @@
+set -loop_iteration_limit 1000
+run
+-ifn XCVR_TOP.prj
+-top XCVR_TOP
+-p xc6vhx380tff1923-2
+-ofn XCVR_TOP.ngc
+-sd {c:/Users/dzwei/Desktop/test/BelleIIvt6/ipcore_dir c:/Users/dzwei/Desktop/test/BelleIIvt6/ipcore_dir/v6_gtxwizard_v1_12/implement}
+-opt_mode speed
+-opt_level 1
+-lc auto
+-bufg 32

@@ -1,0 +1,354 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+CURLYWEI-PC::  Tue Jun 18 03:04:47 2019
+
+par -filter
+C:/Users/curlywei/Desktop/openscr_xilinx_1ch_tc/BelleIIvt6127gp/iseconfig/filter
+.filter -w -intstyle ise -ol high -mt off XCVR_TOP_map.ncd XCVR_TOP.ncd
+XCVR_TOP.pcf 
+
+
+Constraints file: XCVR_TOP.pcf.
+Loading device for application Rf_Device from file '6vhx380t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "XCVR_TOP" is an NCD, version 3.2, device xc6vhx380t, package ff1923, speed -2
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.17 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                 1,239 out of 478,080    1%
+    Number used as Flip Flops:               1,238
+    Number used as Latches:                      1
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        848 out of 239,040    1%
+    Number used as logic:                      454 out of 239,040    1%
+      Number using O6 output only:             224
+      Number using O5 output only:             125
+      Number using O5 and O6:                  105
+      Number used as ROM:                        0
+    Number used as Memory:                     240 out of  73,120    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:           240
+        Number using O6 output only:           155
+        Number using O5 output only:             1
+        Number using O5 and O6:                 84
+    Number used exclusively as route-thrus:    154
+      Number with same-slice register load:    142
+      Number with same-slice carry load:        12
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   451 out of  59,760    1%
+  Number of LUT Flip Flop pairs used:        1,325
+    Number with an unused Flip Flop:           362 out of   1,325   27%
+    Number with an unused LUT:                 477 out of   1,325   36%
+    Number of fully used LUT-FF pairs:         486 out of   1,325   36%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of 478,080    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        40 out of     720    5%
+    Number of LOCed IOBs:                        3 out of      40    7%
+    IOB Flip Flops:                             16
+    Number of bonded IPADs:                      4
+      Number of LOCed IPADs:                     1 out of       4   25%
+    Number of bonded OPADs:                      2
+      Number of LOCed OPADs:                     1 out of       2   50%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  5 out of     768    1%
+    Number using RAMB36E1 only:                  5
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                  1 out of   1,536    1%
+    Number using RAMB18E1 only:                  1
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                      4 out of      32   12%
+    Number used as BUFGs:                        4
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                 0 out of     720    0%
+  Number of OLOGICE1/OSERDESE1s:                16 out of     720    2%
+    Number used as OLOGICE1s:                   16
+    Number used as OSERDESE1s:                   0
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHCEs:                             0 out of     216    0%
+  Number of BUFIODQSs:                           0 out of      72    0%
+  Number of BUFRs:                               0 out of      36    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     864    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              1 out of      40    2%
+  Number of GTHE1_QUADs:                         0 out of       6    0%
+  Number of IBUFDS_GTHE1s:                       0 out of       6    0%
+  Number of IBUFDS_GTXE1s:                       1 out of      24    4%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of      18    0%
+  Number of IODELAYE1s:                          0 out of     720    0%
+  Number of MMCM_ADVs:                           0 out of      18    0%
+  Number of PCIE_2_0s:                           0 out of       4    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 17 secs 
+Finished initial Timing Analysis.  REAL time: 17 secs 
+
+Starting Router
+
+
+Phase  1  : 16970 unrouted;      REAL time: 22 secs 
+
+Phase  2  : 14107 unrouted;      REAL time: 24 secs 
+
+Phase  3  : 961 unrouted;      REAL time: 34 secs 
+
+Phase  4  : 962 unrouted; (Setup:404, Hold:13099, Component Switching Limit:0)     REAL time: 45 secs 
+
+Updating file: XCVR_TOP.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:12627, Component Switching Limit:0)     REAL time: 47 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:12627, Component Switching Limit:0)     REAL time: 47 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:12627, Component Switching Limit:0)     REAL time: 47 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:12627, Component Switching Limit:0)     REAL time: 47 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 50 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 50 secs 
+Total REAL time to Router completion: 50 secs 
+Total CPU time to Router completion: 50 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|Ref_Clock_buffer_out |              |      |      |            |             |
+|               _BUFG | BUFGCTRL_X0Y2| No   |   17 |  0.094     |  1.916      |
++---------------------+--------------+------+------+------------+-------------+
+|Connect_XVCR_Module_ |              |      |      |            |             |
+|loop[0].XCVR_Module_ |              |      |      |            |             |
+|  gen/tx_clk_buf_out | BUFGCTRL_X0Y1| No   |  256 |  0.488     |  2.188      |
++---------------------+--------------+------+------+------------+-------------+
+|Connect_XVCR_Module_ |              |      |      |            |             |
+|loop[0].XCVR_Module_ |              |      |      |            |             |
+|  gen/rx_clk_buf_out | BUFGCTRL_X0Y0| No   |   43 |  0.336     |  2.190      |
++---------------------+--------------+------+------+------------+-------------+
+|Connect_XVCR_Module_ |              |      |      |            |             |
+|loop[0].XCVR_Module_ |              |      |      |            |             |
+|gen/chip_scope_ctrl_ |              |      |      |            |             |
+|                0<0> |BUFGCTRL_X0Y31| No   |   86 |  0.264     |  1.960      |
++---------------------+--------------+------+------+------------+-------------+
+|Connect_XVCR_Module_ |              |      |      |            |             |
+|loop[0].XCVR_Module_ |              |      |      |            |             |
+|gen/chip_scope_ctrl_ |              |      |      |            |             |
+|               0<13> |         Local|      |    4 |  0.000     |  0.386      |
++---------------------+--------------+------+------+------------+-------------+
+|Ref_Clock_buffer_out |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.000     |  1.918      |
++---------------------+--------------+------+------+------------+-------------+
+|Connect_XVCR_Module_ |              |      |      |            |             |
+|loop[0].XCVR_Module_ |              |      |      |            |             |
+|gen/icon/U0/iUPDATE_ |              |      |      |            |             |
+|                 OUT |         Local|      |    1 |  0.000     |  1.323      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 2
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.012ns|     0.788ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><5>"       |             |            |            |        |            
+     MAXDELAY = 0.8 ns                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.014ns|     0.786ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><0>"       |             |            |            |        |            
+     MAXDELAY = 0.8 ns                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.051ns|     0.749ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><4>"       |             |            |            |        |            
+     MAXDELAY = 0.8 ns                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.056ns|     0.744ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><6>"       |             |            |            |        |            
+     MAXDELAY = 0.8 ns                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.070ns|     0.730ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><3>"       |             |            |            |        |            
+     MAXDELAY = 0.8 ns                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.090ns|     0.710ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><11>"      |             |            |            |        |            
+      MAXDELAY = 0.8 ns                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.107ns|     0.693ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><7>"       |             |            |            |        |            
+     MAXDELAY = 0.8 ns                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.109ns|     0.691ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><15>"      |             |            |            |        |            
+      MAXDELAY = 0.8 ns                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.135ns|     0.665ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><8>"       |             |            |            |        |            
+     MAXDELAY = 0.8 ns                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.140ns|     0.660ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><1>"       |             |            |            |        |            
+     MAXDELAY = 0.8 ns                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.140ns|     0.660ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><2>"       |             |            |            |        |            
+     MAXDELAY = 0.8 ns                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.150ns|     0.650ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><10>"      |             |            |            |        |            
+      MAXDELAY = 0.8 ns                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.156ns|     0.644ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><18>"      |             |            |            |        |            
+      MAXDELAY = 0.8 ns                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.158ns|     0.642ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><9>"       |             |            |            |        |            
+     MAXDELAY = 0.8 ns                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.171ns|     0.629ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><13>"      |             |            |            |        |            
+      MAXDELAY = 0.8 ns                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.185ns|     0.615ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><12>"      |             |            |            |        |            
+      MAXDELAY = 0.8 ns                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.185ns|     0.615ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><17>"      |             |            |            |        |            
+      MAXDELAY = 0.8 ns                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.190ns|     0.610ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><14>"      |             |            |            |        |            
+      MAXDELAY = 0.8 ns                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.200ns|     0.600ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><16>"      |             |            |            |        |            
+      MAXDELAY = 0.8 ns                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Connect_XVCR_Module_loop[0].XCVR_Mod | MAXDELAY    |     0.202ns|     0.598ns|       0|           0
+  ule_gen/from_xcvr_Rx_opensrc<0><19>"      |             |            |            |        |            
+      MAXDELAY = 0.8 ns                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_Connect_XVCR_Module_loop_0__XCVR_Modul | SETUP       |     4.229ns|     3.571ns|       0|           0
+  e_gen_XCVR_Rx_clk_out_ch = PERIOD         | HOLD        |     0.088ns|            |       0|           0
+   TIMEGRP         "Connect_XVCR_Module_loo |             |            |            |        |            
+  p[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch"  |             |            |            |        |            
+  7.8         ns HIGH 50%                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_Connect_XVCR_Module_loop_0__XCVR_Modul | SETUP       |     4.686ns|     3.114ns|       0|           0
+  e_gen_XCVR_Tx_clk_out_ch = PERIOD         | HOLD        |     0.023ns|            |       0|           0
+   TIMEGRP         "Connect_XVCR_Module_loo |             |            |            |        |            
+  p[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch"  |             |            |            |        |            
+  7.8         ns HIGH 50%                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    12.076ns|     2.924ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     0.951ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.443ns|     0.557ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.111ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    22.754ns|     7.246ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.104ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     5.641ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     3.914ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D2_TO_T2_path" TIG               | SETUP       |         N/A|     2.830ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J2_TO_D2_path" TIG               | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J3_TO_D2_path" TIG               | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J4_TO_D2_path" TIG               | SETUP       |         N/A|     4.430ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 1 mins 2 secs 
+Total CPU time to PAR completion: 1 mins 2 secs 
+
+Peak Memory Usage:  5154 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 0
+
+Writing design to file XCVR_TOP.ncd
+
+
+
+PAR done!

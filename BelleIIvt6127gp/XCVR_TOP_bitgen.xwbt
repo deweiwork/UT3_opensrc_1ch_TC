@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\BelleIIvt6127gp\XCVR_TOP.ncd
+OUTFILE=C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\BelleIIvt6127gp\XCVR_TOP.bit
+FAMILY=Virtex6
+PART=xc6vhx380t-2ff1923
+WORKINGDIR=C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\BelleIIvt6127gp
+LICENSE=ISE
+USER_INFO=211528190_1777534442_210705149_941

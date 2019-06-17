@@ -1,0 +1,867 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'XCVR_TOP'
+
+Design Information
+------------------
+Command Line   : map -filter
+C:/Users/curlywei/Desktop/openscr_xilinx_1ch_tc/BelleIIvt6127gp/iseconfig/filter
+.filter -intstyle ise -p xc6vhx380t-ff1923-2 -w -logic_opt off -ol high -t 1 -xt
+0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off
+-power off -o XCVR_TOP_map.ncd XCVR_TOP.ngd XCVR_TOP.pcf 
+Target Device  : xc6vhx380t
+Target Package : ff1923
+Target Speed   : -2
+Mapper Version : virtex6 -- $Revision: 1.55 $
+Mapped Date    : Tue Jun 18 03:03:20 2019
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Slice Logic Utilization:
+  Number of Slice Registers:                 1,239 out of 478,080    1%
+    Number used as Flip Flops:               1,238
+    Number used as Latches:                      1
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        848 out of 239,040    1%
+    Number used as logic:                      454 out of 239,040    1%
+      Number using O6 output only:             224
+      Number using O5 output only:             125
+      Number using O5 and O6:                  105
+      Number used as ROM:                        0
+    Number used as Memory:                     240 out of  73,120    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:           240
+        Number using O6 output only:           155
+        Number using O5 output only:             1
+        Number using O5 and O6:                 84
+    Number used exclusively as route-thrus:    154
+      Number with same-slice register load:    142
+      Number with same-slice carry load:        12
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   451 out of  59,760    1%
+  Number of LUT Flip Flop pairs used:        1,325
+    Number with an unused Flip Flop:           362 out of   1,325   27%
+    Number with an unused LUT:                 477 out of   1,325   36%
+    Number of fully used LUT-FF pairs:         486 out of   1,325   36%
+    Number of unique control sets:              89
+    Number of slice register sites lost
+      to control set restrictions:             309 out of 478,080    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        40 out of     720    5%
+    Number of LOCed IOBs:                        3 out of      40    7%
+    IOB Flip Flops:                             16
+    Number of bonded IPADs:                      4
+      Number of LOCed IPADs:                     1 out of       4   25%
+    Number of bonded OPADs:                      2
+      Number of LOCed OPADs:                     1 out of       2   50%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  5 out of     768    1%
+    Number using RAMB36E1 only:                  5
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                  1 out of   1,536    1%
+    Number using RAMB18E1 only:                  1
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                      4 out of      32   12%
+    Number used as BUFGs:                        4
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                 0 out of     720    0%
+  Number of OLOGICE1/OSERDESE1s:                16 out of     720    2%
+    Number used as OLOGICE1s:                   16
+    Number used as OSERDESE1s:                   0
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHCEs:                             0 out of     216    0%
+  Number of BUFIODQSs:                           0 out of      72    0%
+  Number of BUFRs:                               0 out of      36    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     864    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              1 out of      40    2%
+  Number of GTHE1_QUADs:                         0 out of       6    0%
+  Number of IBUFDS_GTHE1s:                       0 out of       6    0%
+  Number of IBUFDS_GTXE1s:                       1 out of      24    4%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of      18    0%
+  Number of IODELAYE1s:                          0 out of     720    0%
+  Number of MMCM_ADVs:                           0 out of      18    0%
+  Number of PCIE_2_0s:                           0 out of       4    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+  Number of RPM macros:           19
+Average Fanout of Non-Clock Nets:                2.71
+
+Peak Memory Usage:  5134 MB
+Total REAL time to MAP completion:  1 mins 24 secs 
+Total CPU time to MAP completion:   1 mins 24 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<13> is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network tx_Para_data_bank<0><0><15> has no load.
+INFO:LIT:395 - The above info message is repeated 26 more times for the
+   following (max. 5 shown):
+   tx_Para_data_bank<0><0><14>,
+   tx_Para_data_bank<0><0><13>,
+   tx_Para_data_bank<0><0><12>,
+   tx_Para_data_bank<0><0><11>,
+   tx_Para_data_bank<0><0><10>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Place:834 - Only a subset of IOs are locked. Out of 40 IOs, 3 are locked
+   and 37 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  39 block(s) removed
+ 246 block(s) optimized away
+  34 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/
+I4.FI[10].U_LUT" (ROM) removed.
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/
+I4.FI[11].U_LUT" (ROM) removed.
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/
+I4.FI[12].U_LUT" (ROM) removed.
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/
+I4.FI[13].U_LUT" (ROM) removed.
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/
+I4.FI[14].U_LUT" (ROM) removed.
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/
+I4.FI[1].U_LUT" (ROM) removed.
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/
+I4.FI[2].U_LUT" (ROM) removed.
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/
+I4.FI[3].U_LUT" (ROM) removed.
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/
+I4.FI[4].U_LUT" (ROM) removed.
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/
+I4.FI[5].U_LUT" (ROM) removed.
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/
+I4.FI[6].U_LUT" (ROM) removed.
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/
+I4.FI[7].U_LUT" (ROM) removed.
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/
+I4.FI[8].U_LUT" (ROM) removed.
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/
+I4.FI[9].U_LUT" (ROM) removed.
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_DSR
+" (ROM) removed.
+Loadless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TC/
+I_STORAGE_QUAL.U_CAP_B" (ROM) removed.
+The signal "Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<7>" is
+sourceless and has been removed.
+The signal "Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<10>"
+is sourceless and has been removed.
+ Sourceless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_MUX
+/U_CS_MUX/I1.U_MUX2/Mmux_O14" (ROM) removed.
+  The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_MUX
+/U_CS_MUX/I1.U_MUX2/Mmux_O13" is sourceless and has been removed.
+The signal "Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<11>"
+is sourceless and has been removed.
+The signal "Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<15>"
+is sourceless and has been removed.
+ Sourceless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_MUX
+/U_CS_MUX/I1.U_MUX2/Mmux_O11" (ROM) removed.
+  The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_MUX
+/U_CS_MUX/I1.U_MUX2/Mmux_O1" is sourceless and has been removed.
+The signal "Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<16>"
+is sourceless and has been removed.
+The signal "Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<17>"
+is sourceless and has been removed.
+The signal "Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<18>"
+is sourceless and has been removed.
+The signal "Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<19>"
+is sourceless and has been removed.
+The signal "Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<31>"
+is sourceless and has been removed.
+ Sourceless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_MUX
+/U_CS_MUX/I1.U_MUX2/Mmux_O15" (ROM) removed.
+  The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_MUX
+/U_CS_MUX/I1.U_MUX2/Mmux_O14" is sourceless and has been removed.
+The signal "Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<32>"
+is sourceless and has been removed.
+ Sourceless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_MUX
+/U_CS_MUX/I1.U_MUX2/Mmux_O16" (ROM) removed.
+  The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_MUX
+/U_CS_MUX/I1.U_MUX2/Mmux_O15" is sourceless and has been removed.
+The signal "Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<33>"
+is sourceless and has been removed.
+The signal "Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<34>"
+is sourceless and has been removed.
+The signal "Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<35>"
+is sourceless and has been removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_MUX
+/U_CS_MUX/I1.U_MUX2/Mmux_O11" is sourceless and has been removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/
+G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_
+SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/SRL_Q_O" is sourceless and
+has been removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/
+G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_
+SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/SRL_Q_O" is sourceless and
+has been removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/
+G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_
+SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/SRL_Q_O" is sourceless and
+has been removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/
+G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_
+SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/SRL_Q_O" is sourceless and
+has been removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/
+G_NMU[4].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_
+SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/SRL_Q_O" is sourceless and
+has been removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/
+G_NMU[5].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_
+SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/SRL_Q_O" is sourceless and
+has been removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/
+G_NMU[6].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_
+SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/SRL_Q_O" is sourceless and
+has been removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/
+G_NMU[7].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_
+SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/SRL_Q_O" is sourceless and
+has been removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/
+G_NMU[8].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_
+SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/SRL_Q_O" is sourceless and
+has been removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/
+G_NMU[9].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_
+SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/SRL_Q_O" is sourceless and
+has been removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/
+G_NMU[10].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/SRL_Q_O" is sourceless and
+has been removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/iCOMMAND_SEL<15>" is
+sourceless and has been removed.
+ Sourceless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].
+F_CMD[15].U_HCE" (ROM) removed.
+ Sourceless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].
+F_CMD[15].U_LCE" (ROM) removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/iCOMMAND_SEL<14>" is
+sourceless and has been removed.
+ Sourceless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].
+F_CMD[14].U_HCE" (ROM) removed.
+ Sourceless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].
+F_CMD[14].U_LCE" (ROM) removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/iCOMMAND_SEL<13>" is
+sourceless and has been removed.
+ Sourceless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].
+F_CMD[13].U_HCE" (ROM) removed.
+ Sourceless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].
+F_CMD[13].U_LCE" (ROM) removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/iCOMMAND_SEL<12>" is
+sourceless and has been removed.
+ Sourceless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].
+F_CMD[12].U_HCE" (ROM) removed.
+ Sourceless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].
+F_CMD[12].U_LCE" (ROM) removed.
+The signal
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/iCOMMAND_SEL<11>" is
+sourceless and has been removed.
+ Sourceless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].
+F_CMD[11].U_HCE" (ROM) removed.
+ Sourceless block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].
+F_CMD[11].U_LCE" (ROM) removed.
+Unused block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/
+I4.FI[11].U_LUT" (ROM) removed.
+Unused block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/
+I4.FI[12].U_LUT" (ROM) removed.
+Unused block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/
+I4.FI[13].U_LUT" (ROM) removed.
+Unused block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/
+I4.FI[14].U_LUT" (ROM) removed.
+Unused block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/
+I4.FI[15].U_LUT" (ROM) removed.
+Unused block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].
+F_CMD[3].U_LCE" (ROM) removed.
+Unused block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].
+F_CMD[6].U_LCE" (ROM) removed.
+Unused block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].
+F_CMD[7].U_LCE" (ROM) removed.
+Unused block
+"Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_MUX
+/U_CS_MUX/I1.U_MUX2/Mmux_O12" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/XST_GND
+VCC 		Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/XST_VCC
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_C
+APCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_
+USE_RPM_NE0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U_GAND_SRL_SLICE/XST_GND
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_C
+APCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_
+USE_RPM_NE0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U_GAND_SRL_SLICE/XST_VCC
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_C
+APCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_
+USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_C
+APCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I
+_USE_RPM_NE0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U_GAND_SRL_SLICE/XST_GND
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_C
+APCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I
+_USE_RPM_NE0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U_GAND_SRL_SLICE/XST_VCC
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_C
+APCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I
+_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_C
+APCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I
+_USE_RPM_NE0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U_GAND_SRL_SLICE/XST_GND
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_C
+APCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I
+_USE_RPM_NE0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U_GAND_SRL_SLICE/XST_VCC
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_C
+APCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I
+_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+LUT6
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_MU
+X/U_CS_MUX/I1.U_MUX2/Mmux_O13
+   optimized to 1
+LUT6
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_MU
+X/U_CS_MUX/I1.U_MUX2/Mmux_O17
+   optimized to 1
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+0].U_GAND_SRL_SLICE/XST_GND
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_GND
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_VCC
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[10].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GAND
+X_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX
+[0].U_GAND_SRL_SLICE/XST_GND
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[10].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GAND
+X_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX
+[0].U_GAND_SRL_SLICE/XST_VCC
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+0].U_GAND_SRL_SLICE/XST_GND
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_GND
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_VCC
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+0].U_GAND_SRL_SLICE/XST_GND
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_GND
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_VCC
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+0].U_GAND_SRL_SLICE/XST_GND
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_GND
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_VCC
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[4].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+0].U_GAND_SRL_SLICE/XST_GND
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[4].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_GND
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[4].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_VCC
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[4].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[5].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+0].U_GAND_SRL_SLICE/XST_GND
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[5].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_GND
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[5].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_VCC
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[5].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[6].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+0].U_GAND_SRL_SLICE/XST_GND
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[6].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_GND
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[6].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+2].U_GAND_SRL_SLICE/XST_GND
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[6].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+2].U_GAND_SRL_SLICE/XST_VCC
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[6].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[7].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+0].U_GAND_SRL_SLICE/XST_GND
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[7].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_GND
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[7].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+2].U_GAND_SRL_SLICE/XST_GND
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[7].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+2].U_GAND_SRL_SLICE/XST_VCC
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[7].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[8].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+0].U_GAND_SRL_SLICE/XST_GND
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[8].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_GND
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[8].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+2].U_GAND_SRL_SLICE/XST_GND
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[8].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+2].U_GAND_SRL_SLICE/XST_VCC
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[8].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[9].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+0].U_GAND_SRL_SLICE/XST_GND
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[9].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+1].U_GAND_SRL_SLICE/XST_GND
+GND
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[9].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+2].U_GAND_SRL_SLICE/XST_GND
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[9].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[
+2].U_GAND_SRL_SLICE/XST_VCC
+VCC
+		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM
+/G_NMU[9].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX
+_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+GND 		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/XST_GND
+VCC 		Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/XST_VCC
+GND 		XST_GND
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLK_SEL                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| CLK_SEL_127M                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| CLK_SEL_254M                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| RST_N_in                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RX_ser_N_bank<0><0>                | IPAD             | INPUT     |                      |       |          |      |              |          |          |
+| RX_ser_bank<0><0>                  | IPAD             | INPUT     |                      |       |          |      |              |          |          |
+| TX_ser_N_bnak<0><0>                | OPAD             | OUTPUT    |                      |       |          |      |              |          |          |
+| TX_ser_bnak<0><0>                  | OPAD             | OUTPUT    |                      |       |          |      |              |          |          |
+| XCVR_Ref_Clock_in                  | IPAD             | INPUT     |                      |       |          |      |              |          |          |
+| XCVR_Ref_Clock_in_N                | IPAD             | INPUT     |                      |       |          |      |              |          |          |
+| error_cnt_ch_bank<0><0><0>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><1>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><2>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><3>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><4>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><5>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><6>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><7>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><8>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><9>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><10>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><11>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><12>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><13>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><14>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><15>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| ext_rx_para_data_clk_bank<0><0>    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ext_tx_para_data_clk_bank<0><0>    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><0>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><1>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><2>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><3>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><4>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><5>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><6>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><7>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><8>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><9>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><10>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><11>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><12>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><13>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><14>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_Para_data_bank<0><0><15>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rx_traffic_ready_ext_bank<0>       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| tx_traffic_ready_ext_bank<0>       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAP
+CTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_US
+E_RPM_NE0.U_GAND_SRL_SET/MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAP
+CTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_U
+SE_RPM_NE0.U_GAND_SRL_SET/MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAP
+CTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_U
+SE_RPM_NE0.U_GAND_SRL_SET/MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAP
+CTRL_I_SRLT_NE_1.U_CDONE_MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAP
+CTRL_I_SRLT_NE_1.U_CMPRESET_MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAP
+CTRL_I_SRLT_NE_1.U_NS0_MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAP
+CTRL_I_SRLT_NE_1.U_NS1_MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAP
+CTRL_I_SRLT_NE_1.U_SCRST_MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G
+_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_S
+RL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G
+_NMU[10].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_
+SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G
+_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_S
+RL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G
+_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_S
+RL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G
+_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_S
+RL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G
+_NMU[4].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_S
+RL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G
+_NMU[5].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_S
+RL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G
+_NMU[6].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_S
+RL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G
+_NMU[7].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_S
+RL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G
+_NMU[8].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_S
+RL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G
+_NMU[9].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_S
+RL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+Area Group "pblock_dec_draw"
+  No COMPRESSION specified for Area Group "pblock_dec_draw"
+  RANGE: SLICE_X0Y83:SLICE_X3Y85
+  Slice Logic Utilization:
+    Number of Slice Registers:              42 out of     96   43%
+    Number of Slice LUTs:                   31 out of     48   64%
+      Number used as logic:                 31
+  Slice Logic Distribution:
+    Number of occupied Slices:              12 out of     12  100%
+    Number of LUT Flip Flop pairs used:     45
+      Number with an unused Flip Flop:      13 out of     45   28%
+      Number with an unused LUT:             6 out of     45   13%
+      Number of fully used LUT-FF pairs:    26 out of     45   57%
+
+Area Group "pblock_enc_draw"
+  No COMPRESSION specified for Area Group "pblock_enc_draw"
+  RANGE: SLICE_X0Y86:SLICE_X3Y88
+  Slice Logic Utilization:
+    Number of Slice Registers:              37 out of     96   38%
+    Number of Slice LUTs:                   20 out of     48   41%
+      Number used as logic:                 20
+  Slice Logic Distribution:
+    Number of occupied Slices:               9 out of     12   75%
+    Number of LUT Flip Flop pairs used:     29
+      Number with an unused Flip Flop:       6 out of     29   20%
+      Number with an unused LUT:             1 out of     29    3%
+      Number of fully used LUT-FF pairs:    22 out of     29   75%
+
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

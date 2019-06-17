@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="685" delta="new" >"C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\frame_gen.vhd" Line 9: Overwriting existing primary unit <arg fmt="%s" index="1">frame_gen</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="685" delta="new" >"C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\frame_check.vhd" Line 9: Overwriting existing primary unit <arg fmt="%s" index="1">frame_check</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\ipcore_dir\v6_gtxwizard_v1_12.vhd" Line 217: Assignment to <arg fmt="%s" index="1">tied_to_vcc_i</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\decode_v.v" Line 136: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\decode_v.v" Line 156: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\XCVR_8B10B_interconnect.vhd" Line 141: Net &lt;<arg fmt="%s" index="1">rx_Para_data_from_sync_buf_ch[0][15]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\XCVR_8B10B_interconnect.vhd" Line 142: Net &lt;<arg fmt="%s" index="1">elastic_buf_overflow</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">TX_para_external_ch&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\XCVR_8B10B_interconnect.vhd</arg>&quot; line <arg fmt="%s" index="2">366</arg>: Output port &lt;<arg fmt="%s" index="3">Rx_DATA_client</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">generate_traffic_loop[0].traffic</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\XCVR_8B10B_interconnect.vhd</arg>&quot; line <arg fmt="%s" index="2">366</arg>: Output port &lt;<arg fmt="%s" index="3">gp_sync_can_start</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">generate_traffic_loop[0].traffic</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">RX_para_external_ch&lt;0&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">TX_para_external_clk_ch</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">RX_para_external_clk_ch</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">rx_Para_data_from_sync_buf_ch&lt;0&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">tx_traffic_ready_ext_ch</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">rx_traffic_ready_ext_ch</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">elastic_buf_overflow</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\ipcore_dir\v6_gtxwizard_v1_12.vhd</arg>&quot; line <arg fmt="%s" index="2">231</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_v6_gtxwizard_v1_12_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">RX_D</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rx_sync_status&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rx_pattern_detected&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\encoder_16b20b.vhd</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">dispout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">encoder_0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\encoder_16b20b.vhd</arg>&quot; line <arg fmt="%s" index="2">46</arg>: Output port &lt;<arg fmt="%s" index="3">dispout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">encoder_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\decoder_16b20b.vhd</arg>&quot; line <arg fmt="%s" index="2">42</arg>: Output port &lt;<arg fmt="%s" index="3">dispout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">decoder_0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\decoder_16b20b.vhd</arg>&quot; line <arg fmt="%s" index="2">53</arg>: Output port &lt;<arg fmt="%s" index="3">dispout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">decoder_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36</arg> in unit <arg fmt="%s" index="2">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36</arg> in unit <arg fmt="%s" index="2">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36</arg> in unit <arg fmt="%s" index="2">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U_RAMB36</arg> in unit <arg fmt="%s" index="2">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U_RAMB36</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U_RAMB36</arg> in unit <arg fmt="%s" index="2">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U_RAMB36</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">flag_swap_r</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">generate_traffic_loop[0].traffic</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Tx_K_r_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">generate_traffic_loop[0].traffic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">data_in_buf_1_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">generate_16B20B_enc_loop[0].enc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">TX_K_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">generate_traffic_loop[0].traffic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">flag_swap_r</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">traffic</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Tx_K_r_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">traffic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">TX_K_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">traffic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_16B20B_enc_loop[0].enc/data_in_buf_1_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XCVR_TOP</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/gp_sync_can_start</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/gp_sync_can_start_r</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XCVR_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1513" delta="new" >No elements found for TNM &apos;<arg fmt="%s" index="1">D_CLK</arg>&apos; on object &apos;<arg fmt="%s" index="2">Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/CLK_I</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="1513" delta="new" >No elements found for TNM &apos;<arg fmt="%s" index="1">D_CLK</arg>&apos; on object &apos;<arg fmt="%s" index="2">Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/CLK_I</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="1513" delta="new" >No elements found for TNM &apos;<arg fmt="%s" index="1">D_CLK</arg>&apos; on object &apos;<arg fmt="%s" index="2">Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/CLK_I</arg>&apos;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

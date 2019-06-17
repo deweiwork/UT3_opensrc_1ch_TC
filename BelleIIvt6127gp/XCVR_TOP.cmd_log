@@ -1,0 +1,11 @@
+xst -intstyle ise -filter "C:/Users/curlywei/Desktop/openscr_xilinx_1ch_tc/BelleIIvt6127gp/iseconfig/filter.filter" -ifn "C:/Users/curlywei/Desktop/openscr_xilinx_1ch_tc/BelleIIvt6127gp/XCVR_TOP.xst" -ofn "C:/Users/curlywei/Desktop/openscr_xilinx_1ch_tc/BelleIIvt6127gp/XCVR_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ../ipcore_dir -sd ../ipcore_dir/v6_gtxwizard_v1_12/implement -sd ipcore_dir -nt timestamp -uc XCVR_TOP.ucf -p xc6vhx380t-ff1923-2 XCVR_TOP.ngc XCVR_TOP.ngd  
+map -filter "C:/Users/curlywei/Desktop/openscr_xilinx_1ch_tc/BelleIIvt6127gp/iseconfig/filter.filter" -intstyle ise -p xc6vhx380t-ff1923-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o XCVR_TOP_map.ncd XCVR_TOP.ngd XCVR_TOP.pcf 
+par -filter "C:/Users/curlywei/Desktop/openscr_xilinx_1ch_tc/BelleIIvt6127gp/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off XCVR_TOP_map.ncd XCVR_TOP.ncd XCVR_TOP.pcf 
+trce -filter C:/Users/curlywei/Desktop/openscr_xilinx_1ch_tc/BelleIIvt6127gp/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml XCVR_TOP.twx XCVR_TOP.ncd -o XCVR_TOP.twr XCVR_TOP.pcf -ucf XCVR_TOP.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f XCVR_TOP.ut XCVR_TOP.ncd 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ../ipcore_dir -sd ../ipcore_dir/v6_gtxwizard_v1_12/implement -sd ipcore_dir -nt timestamp -uc XCVR_TOP.ucf -p xc6vhx380t-ff1923-2 XCVR_TOP.ngc XCVR_TOP.ngd  
+map -filter "C:/Users/curlywei/Desktop/openscr_xilinx_1ch_tc/BelleIIvt6127gp/iseconfig/filter.filter" -intstyle ise -p xc6vhx380t-ff1923-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o XCVR_TOP_map.ncd XCVR_TOP.ngd XCVR_TOP.pcf 
+par -filter "C:/Users/curlywei/Desktop/openscr_xilinx_1ch_tc/BelleIIvt6127gp/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off XCVR_TOP_map.ncd XCVR_TOP.ncd XCVR_TOP.pcf 
+trce -filter C:/Users/curlywei/Desktop/openscr_xilinx_1ch_tc/BelleIIvt6127gp/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml XCVR_TOP.twx XCVR_TOP.ncd -o XCVR_TOP.twr XCVR_TOP.pcf -ucf XCVR_TOP.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f XCVR_TOP.ut XCVR_TOP.ncd 

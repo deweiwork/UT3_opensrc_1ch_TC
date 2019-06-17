@@ -1,0 +1,1098 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: XCVR_TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "XCVR_TOP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "XCVR_TOP"
+Output Format                      : NGC
+Target Device                      : xc6vhx380t-2-ff1923
+
+---- Source Options
+Top Module Name                    : XCVR_TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../ipcore_dir" "../ipcore_dir/v6_gtxwizard_v1_12/implement" "ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\encode_v.v" into library work
+Parsing module <encode_v>.
+Analyzing Verilog file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\decode_v.v" into library work
+Parsing module <decode_v>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\ipcore_dir\chipscope_icon.vhd" into library work
+Parsing entity <chipscope_icon>.
+Parsing architecture <chipscope_icon_a> of entity <chipscope_icon>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\ipcore_dir\chipscope_ila.vhd" into library work
+Parsing entity <chipscope_ila>.
+Parsing architecture <chipscope_ila_a> of entity <chipscope_ila>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd" into library work
+Parsing entity <v6_gtxwizard_v1_12_gtx>.
+Parsing architecture <RTL> of entity <v6_gtxwizard_v1_12_gtx>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\ipcore_dir\v6_gtxwizard_v1_12\example_design\frame_gen.vhd" into library work
+Parsing entity <FRAME_GEN>.
+Parsing architecture <RTL> of entity <frame_gen>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\ipcore_dir\v6_gtxwizard_v1_12\example_design\frame_check.vhd" into library work
+Parsing entity <FRAME_CHECK>.
+Parsing architecture <RTL> of entity <frame_check>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\ipcore_dir\v6_gtxwizard_v1_12.vhd" into library work
+Parsing entity <v6_gtxwizard_v1_12>.
+Parsing architecture <RTL> of entity <v6_gtxwizard_v1_12>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\ipcore_dir\v6_gtxwizard_v1_12\example_design\v6_gtxwizard_v1_12_top.vhd" into library work
+Parsing entity <v6_gtxwizard_v1_12_top>.
+Parsing architecture <RTL> of entity <v6_gtxwizard_v1_12_top>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\DataStruct_param_def_header.vhd" into library work
+Parsing package <DataStruct_param_def_header>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\traffic.vhd" into library work
+Parsing entity <traffic>.
+Parsing architecture <top> of entity <traffic>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\reset_ctrl.vhd" into library work
+Parsing entity <reset_ctrl>.
+Parsing architecture <Behavioral> of entity <reset_ctrl>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\encoder_16b20b.vhd" into library work
+Parsing entity <encoder_16b20b>.
+Parsing architecture <arch> of entity <encoder_16b20b>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\decoder_16b20b.vhd" into library work
+Parsing entity <decoder_16b20b>.
+Parsing architecture <arch> of entity <decoder_16b20b>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\frame_gen.vhd" into library work
+Parsing entity <frame_gen>.
+WARNING:HDLCompiler:685 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\frame_gen.vhd" Line 9: Overwriting existing primary unit frame_gen
+Parsing architecture <RTL> of entity <frame_gen>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\frame_check.vhd" into library work
+Parsing entity <frame_check>.
+WARNING:HDLCompiler:685 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\frame_check.vhd" Line 9: Overwriting existing primary unit frame_check
+Parsing architecture <RTL> of entity <frame_check>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\XCVR_8B10B_interconnect.vhd" into library work
+Parsing entity <XCVR_8B10B_interconnect>.
+Parsing architecture <XCVR_8B10B_interconnect_Top> of entity <xcvr_8b10b_interconnect>.
+Parsing VHDL file "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\XCVR_top.vhd" into library work
+Parsing entity <XCVR_TOP>.
+Parsing architecture <XCVR_TOP_connect> of entity <xcvr_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <XCVR_TOP> (architecture <XCVR_TOP_connect>) from library <work>.
+
+Elaborating entity <XCVR_8B10B_interconnect> (architecture <XCVR_8B10B_interconnect_Top>) from library <work>.
+
+Elaborating entity <v6_gtxwizard_v1_12> (architecture <RTL>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\ipcore_dir\v6_gtxwizard_v1_12.vhd" Line 217: Assignment to tied_to_vcc_i ignored, since the identifier is never used
+
+Elaborating entity <v6_gtxwizard_v1_12_gtx> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <frame_gen> (architecture <RTL>) from library <work>.
+
+Elaborating entity <frame_check> (architecture <RTL>) from library <work>.
+
+Elaborating entity <traffic> (architecture <top>) with generics from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\traffic.vhd" Line 204. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\traffic.vhd" Line 314. Case statement is complete. others clause is never selected
+
+Elaborating entity <reset_ctrl> (architecture <Behavioral>) with generics from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\reset_ctrl.vhd" Line 167. Case statement is complete. others clause is never selected
+
+Elaborating entity <encoder_16b20b> (architecture <arch>) from library <work>.
+Going to verilog side to elaborate module encode_v
+
+Elaborating module <encode_v>.
+Back to vhdl to continue elaboration
+Going to verilog side to elaborate module encode_v
+Back to vhdl to continue elaboration
+
+Elaborating entity <decoder_16b20b> (architecture <arch>) from library <work>.
+Going to verilog side to elaborate module decode_v
+
+Elaborating module <decode_v>.
+WARNING:HDLCompiler:413 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\decode_v.v" Line 136: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\decode_v.v" Line 156: Result of 32-bit expression is truncated to fit in 1-bit target.
+Back to vhdl to continue elaboration
+Going to verilog side to elaborate module decode_v
+Back to vhdl to continue elaboration
+
+Elaborating entity <chipscope_icon> (architecture <chipscope_icon_a>) from library <work>.
+
+Elaborating entity <chipscope_ila> (architecture <chipscope_ila_a>) from library <work>.
+WARNING:HDLCompiler:634 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\XCVR_8B10B_interconnect.vhd" Line 141: Net <rx_Para_data_from_sync_buf_ch[0][15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\XCVR_8B10B_interconnect.vhd" Line 142: Net <elastic_buf_overflow> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <XCVR_TOP>.
+    Related source file is "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\XCVR_top.vhd".
+    Summary:
+	no macro.
+Unit <XCVR_TOP> synthesized.
+
+Synthesizing Unit <XCVR_8B10B_interconnect>.
+    Related source file is "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\XCVR_8B10B_interconnect.vhd".
+WARNING:Xst:647 - Input <TX_para_external_ch<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\XCVR_8B10B_interconnect.vhd" line 366: Output port <Rx_DATA_client> of the instance <generate_traffic_loop[0].traffic> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\XCVR_8B10B_interconnect.vhd" line 366: Output port <gp_sync_can_start> of the instance <generate_traffic_loop[0].traffic> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <RX_para_external_ch<0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <TX_para_external_clk_ch> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <RX_para_external_clk_ch> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rx_Para_data_from_sync_buf_ch<0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <tx_traffic_ready_ext_ch> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rx_traffic_ready_ext_ch> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <elastic_buf_overflow> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <XCVR_8B10B_interconnect> synthesized.
+
+Synthesizing Unit <v6_gtxwizard_v1_12>.
+    Related source file is "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\ipcore_dir\v6_gtxwizard_v1_12.vhd".
+        WRAPPER_SIM_GTXRESET_SPEEDUP = 1
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\ipcore_dir\v6_gtxwizard_v1_12.vhd" line 231: Output port <TXPLLLKDET_OUT> of the instance <gtx0_v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <v6_gtxwizard_v1_12> synthesized.
+
+Synthesizing Unit <v6_gtxwizard_v1_12_gtx>.
+    Related source file is "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd".
+        GTX_SIM_GTXRESET_SPEEDUP = 1
+        GTX_TX_CLK_SOURCE = "RXPLL"
+        GTX_POWER_SAVE = "0000110100"
+    Summary:
+	no macro.
+Unit <v6_gtxwizard_v1_12_gtx> synthesized.
+
+Synthesizing Unit <frame_gen>.
+    Related source file is "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\frame_gen.vhd".
+    Found 16-bit register for signal <tx_d_r>.
+    Found 16-bit adder for signal <tx_d_r[15]_GND_81_o_add_0_OUT> created at line 31.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <frame_gen> synthesized.
+
+Synthesizing Unit <frame_check>.
+    Related source file is "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\frame_check.vhd".
+WARNING:Xst:647 - Input <RX_D> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <err_count_r>.
+    Found 16-bit adder for signal <err_count_r[15]_GND_82_o_add_2_OUT> created at line 38.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <frame_check> synthesized.
+
+Synthesizing Unit <traffic>.
+    Related source file is "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\traffic.vhd".
+        sent_k_until_clks = 65535
+        flag_of_k_ctrl = "01"
+        flag_of_k_data = "00"
+        flag_of_k_ctrl_swap = "10"
+        flag_of_k_err_2 = "11"
+        pattern_k0 = "0000001010111100"
+        pattern_K1 = "0000000010111100"
+        pattern_K0_swap = "1011110000000010"
+        pattern_B = "0101011001111000"
+        gp_data = "0001001000110100"
+    Found 16-bit register for signal <Tx_DATA_Xcvr>.
+    Found 2-bit register for signal <TX_K>.
+    Found 1-bit register for signal <lane_up_r_tx>.
+    Found 1-bit register for signal <tx_traffic_ready>.
+    Found 16-bit register for signal <Tx_DATA_Xcvr_r>.
+    Found 2-bit register for signal <Tx_K_r>.
+    Found 1-bit register for signal <tx_traffic_ready_r>.
+    Found 3-bit register for signal <tx_status>.
+    Found 16-bit register for signal <Tx_procedure.rx_wait_cnt>.
+    Found 16-bit register for signal <Rx_DATA_client>.
+    Found 16-bit register for signal <Rx_DATA_Xcvr_i>.
+    Found 2-bit register for signal <Rx_K_i>.
+    Found 1-bit register for signal <lane_up_r_rx>.
+    Found 1-bit register for signal <rx_traffic_ready>.
+    Found 1-bit register for signal <flag_swap>.
+    Found 1-bit register for signal <gp_sync_can_start>.
+    Found 16-bit register for signal <Rx_DATA_client_r>.
+    Found 1-bit register for signal <rx_traffic_ready_r>.
+    Found 1-bit register for signal <gp_sync_can_start_r>.
+    Found 3-bit register for signal <rx_status>.
+    Found 1-bit register for signal <flag_swap_r>.
+    Found 16-bit register for signal <Tx_DATA_client_r>.
+    Found finite state machine <FSM_1> for signal <rx_status>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 8                                              |
+    | Clock              | Rx_Clk (rising_edge)                           |
+    | Reset              | Reset_n_lane_up_OR_21_o (positive)             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | wait_pattern_k0                                |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_0> for signal <tx_status>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 6                                              |
+    | Clock              | Tx_Clk (rising_edge)                           |
+    | Reset              | Reset_n_lane_up_OR_21_o (positive)             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | sent_pattern_k0_wait_rx_obtain                 |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <Tx_procedure.rx_wait_cnt[15]_GND_83_o_add_18_OUT> created at line 191.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 128 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <traffic> synthesized.
+
+Synthesizing Unit <reset_ctrl>.
+    Related source file is "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\reset_ctrl.vhd".
+        power_on_wait_clks = 65535
+        wait_locked_clks = 65535
+        wait_alignment_done_clks = 255
+        pre_lane_up_clks = 255
+WARNING:Xst:647 - Input <rx_sync_status<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rx_pattern_detected<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <XCVR_rst_out_r>.
+    Found 1-bit register for signal <XCVR_rst_out>.
+    Found 1-bit register for signal <align_en>.
+    Found 1-bit register for signal <align_en_r>.
+    Found 1-bit register for signal <lane_up_r>.
+    Found 1-bit register for signal <lane_up>.
+    Found 16-bit register for signal <lane_up_FSM.power_on_cnt>.
+    Found 16-bit register for signal <lane_up_FSM.locked_cnt>.
+    Found 3-bit register for signal <lane_up_status>.
+    Found 8-bit register for signal <lane_up_FSM.comma_align_cnt>.
+    Found 1-bit register for signal <RX_freq_locked_r>.
+    Found 1-bit register for signal <rst_ip_done>.
+    Found 1-bit register for signal <all_locked>.
+    Found 8-bit register for signal <lane_up_FSM.pre_lane_up_cnt>.
+    Found finite state machine <FSM_2> for signal <lane_up_status>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 4                                              |
+    | Clock              | INIT_CLK (rising_edge)                         |
+    | Reset              | Reset_n (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | power_on                                       |
+    | Power Up State     | power_on                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <lane_up_FSM.power_on_cnt[15]_GND_84_o_add_3_OUT> created at line 114.
+    Found 16-bit adder for signal <lane_up_FSM.locked_cnt[15]_GND_84_o_add_7_OUT> created at line 128.
+    Found 8-bit adder for signal <lane_up_FSM.comma_align_cnt[7]_GND_84_o_add_13_OUT> created at line 142.
+    Found 8-bit adder for signal <lane_up_FSM.pre_lane_up_cnt[7]_GND_84_o_add_17_OUT> created at line 152.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  57 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <reset_ctrl> synthesized.
+
+Synthesizing Unit <encoder_16b20b>.
+    Related source file is "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\encoder_16b20b.vhd".
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\encoder_16b20b.vhd" line 38: Output port <dispout> of the instance <encoder_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\encoder_16b20b.vhd" line 46: Output port <dispout> of the instance <encoder_1> is unconnected or connected to loadless signal.
+    Found 20-bit register for signal <data_out>.
+    Found 9-bit register for signal <data_in_buf_0>.
+    Found 9-bit register for signal <data_in_buf_1>.
+    Summary:
+	inferred  38 D-type flip-flop(s).
+Unit <encoder_16b20b> synthesized.
+
+Synthesizing Unit <encode_v>.
+    Related source file is "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\encode_v.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <encode_v> synthesized.
+
+Synthesizing Unit <decoder_16b20b>.
+    Related source file is "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\decoder_16b20b.vhd".
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\decoder_16b20b.vhd" line 42: Output port <dispout> of the instance <decoder_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\decoder_16b20b.vhd" line 53: Output port <dispout> of the instance <decoder_1> is unconnected or connected to loadless signal.
+    Found 16-bit register for signal <data_out>.
+    Found 10-bit register for signal <data_in_buf_0>.
+    Found 10-bit register for signal <data_in_buf_1>.
+    Found 2-bit register for signal <disp_out>.
+    Summary:
+	inferred  38 D-type flip-flop(s).
+Unit <decoder_16b20b> synthesized.
+
+Synthesizing Unit <decode_v>.
+    Related source file is "C:\Users\curlywei\Desktop\openscr_xilinx_1ch_tc\src\openscr8B10B\decode_v.v".
+    Found 1-bit comparator equal for signal <ei_ii_equal_2_o> created at line 55
+    Summary:
+	inferred   1 Comparator(s).
+Unit <decode_v> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 16-bit adder                                          : 5
+ 8-bit adder                                           : 2
+# Registers                                            : 42
+ 1-bit register                                        : 19
+ 10-bit register                                       : 2
+ 16-bit register                                       : 12
+ 2-bit register                                        : 4
+ 20-bit register                                       : 1
+ 8-bit register                                        : 2
+ 9-bit register                                        : 2
+# Comparators                                          : 2
+ 1-bit comparator equal                                : 2
+# Multiplexers                                         : 17
+ 1-bit 2-to-1 multiplexer                              : 4
+ 16-bit 2-to-1 multiplexer                             : 10
+ 2-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 3
+# Xors                                                 : 38
+ 1-bit xor2                                            : 38
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../ipcore_dir/chipscope_ila.ngc>.
+Reading core <../ipcore_dir/chipscope_icon.ngc>.
+Loading core <chipscope_ila> for timing and area information for instance <ila_tx>.
+Loading core <chipscope_icon> for timing and area information for instance <icon>.
+INFO:Xst:1901 - Instance U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36 in unit U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36 in unit U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36 in unit U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U_RAMB36 in unit U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U_RAMB36 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U_RAMB36 in unit U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U_RAMB36 of type RAMB36 has been replaced by RAMB36E1
+WARNING:Xst:1426 - The value init of the FF/Latch flag_swap_r hinder the constant cleaning in the block generate_traffic_loop[0].traffic.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <Tx_K_r_1> has a constant value of 0 in block <generate_traffic_loop[0].traffic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_buf_1_8> (without init value) has a constant value of 0 in block <generate_16B20B_enc_loop[0].enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TX_K_1> (without init value) has a constant value of 0 in block <generate_traffic_loop[0].traffic>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <frame_check>.
+The following registers are absorbed into counter <err_count_r>: 1 register on signal <err_count_r>.
+Unit <frame_check> synthesized (advanced).
+
+Synthesizing (advanced) Unit <frame_gen>.
+The following registers are absorbed into counter <tx_d_r>: 1 register on signal <tx_d_r>.
+Unit <frame_gen> synthesized (advanced).
+
+Synthesizing (advanced) Unit <reset_ctrl>.
+The following registers are absorbed into counter <lane_up_FSM.power_on_cnt>: 1 register on signal <lane_up_FSM.power_on_cnt>.
+The following registers are absorbed into counter <lane_up_FSM.comma_align_cnt>: 1 register on signal <lane_up_FSM.comma_align_cnt>.
+The following registers are absorbed into counter <lane_up_FSM.pre_lane_up_cnt>: 1 register on signal <lane_up_FSM.pre_lane_up_cnt>.
+Unit <reset_ctrl> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 2
+# Counters                                             : 5
+ 16-bit up counter                                     : 3
+ 8-bit up counter                                      : 2
+# Registers                                            : 229
+ Flip-Flops                                            : 229
+# Comparators                                          : 2
+ 1-bit comparator equal                                : 2
+# Multiplexers                                         : 11
+ 1-bit 2-to-1 multiplexer                              : 2
+ 16-bit 2-to-1 multiplexer                             : 8
+ 2-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 3
+# Xors                                                 : 38
+ 1-bit xor2                                            : 38
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch flag_swap_r hinder the constant cleaning in the block traffic.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <Tx_K_r_1> has a constant value of 0 in block <traffic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TX_K_1> (without init value) has a constant value of 0 in block <traffic>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/FSM_1> on signal <rx_status[1:3]> with user encoding.
+------------------------------
+ State            | Encoding
+------------------------------
+ idle             | 000
+ wait_pattern_k0  | 001
+ wait_pattern_k1  | 010
+ wait_pattern_b   | 011
+ sync_align       | 100
+ wait_client_data | 101
+------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/FSM_0> on signal <tx_status[1:3]> with user encoding.
+--------------------------------------------
+ State                          | Encoding
+--------------------------------------------
+ idle                           | 000
+ sent_pattern_k0_wait_rx_obtain | 001
+ sent_pattern_k1_wait_rx_obtain | 010
+ sent_pattern_b_wait_rx_obtain  | 011
+ sent_sync_patterns             | 100
+ sent_client_data               | 101
+--------------------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Connect_XVCR_Module_loop[0].XCVR_Module_gen/rst_ctrl/FSM_2> on signal <lane_up_status[1:3]> with user encoding.
+--------------------------------
+ State              | Encoding
+--------------------------------
+ power_on           | 000
+ wait_locked        | 001
+ comma_align        | 010
+ pre_lane_up        | 011
+ now_xcvr_init_done | 100
+--------------------------------
+
+Optimizing unit <XCVR_TOP> ...
+
+Optimizing unit <XCVR_8B10B_interconnect> ...
+
+Optimizing unit <frame_check> ...
+
+Optimizing unit <traffic> ...
+
+Optimizing unit <reset_ctrl> ...
+
+Optimizing unit <encoder_16b20b> ...
+
+Optimizing unit <encode_v> ...
+
+Optimizing unit <decoder_16b20b> ...
+
+Optimizing unit <decode_v> ...
+WARNING:Xst:1710 - FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_16B20B_enc_loop[0].enc/data_in_buf_1_8> (without init value) has a constant value of 0 in block <XCVR_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_15> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_14> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_13> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_12> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_11> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_10> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_9> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_8> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_7> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_6> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_5> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_4> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_3> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_2> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_1> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_0> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_15> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_14> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_13> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_12> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_11> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_10> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_9> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_8> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_7> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_6> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_5> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_4> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_3> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_2> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_1> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_0> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/gp_sync_can_start> of sequential type is unconnected in block <XCVR_TOP>.
+WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/gp_sync_can_start_r> of sequential type is unconnected in block <XCVR_TOP>.
+
+Mapping all equations...
+WARNING:Xst:1513 - No elements found for TNM 'D_CLK' on object 'Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/CLK_I'.
+WARNING:Xst:1513 - No elements found for TNM 'D_CLK' on object 'Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/CLK_I'.
+WARNING:Xst:1513 - No elements found for TNM 'D_CLK' on object 'Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAND.U_CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_NE0.U_GAND_SRL_SET/CLK_I'.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block XCVR_TOP, actual ratio is 0.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_15 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_14 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_13 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_12 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_11 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_10 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_9 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_8 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_7 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_6 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 281
+ Flip-Flops                                            : 281
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : XCVR_TOP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1122
+#      GND                         : 36
+#      INV                         : 12
+#      LUT1                        : 139
+#      LUT2                        : 72
+#      LUT3                        : 60
+#      LUT4                        : 129
+#      LUT5                        : 47
+#      LUT6                        : 145
+#      MUXCY                       : 89
+#      MUXCY_L                     : 181
+#      MUXF5                       : 2
+#      MUXF6                       : 1
+#      MUXF7                       : 14
+#      MUXF8                       : 2
+#      VCC                         : 35
+#      XORCY                       : 158
+# FlipFlops/Latches                : 1255
+#      FD                          : 369
+#      FDC                         : 94
+#      FDCE                        : 105
+#      FDE                         : 137
+#      FDP                         : 382
+#      FDR                         : 52
+#      FDRE                        : 85
+#      FDS                         : 30
+#      LDC                         : 1
+# RAMS                             : 6
+#      RAMB18E1                    : 1
+#      RAMB36E1                    : 5
+# Shift Registers                  : 324
+#      SRL16                       : 184
+#      SRL16E                      : 1
+#      SRLC16E                     : 10
+#      SRLC32E                     : 129
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 47
+#      IBUF                        : 5
+#      IBUFDS_GTXE1                : 1
+#      OBUF                        : 41
+# GigabitIOs                       : 1
+#      GTXE1                       : 1
+# Others                           : 4
+#      BSCAN_VIRTEX6               : 1
+#      TIMESPEC                    : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vhx380tff1923-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1239  out of  478080     0%  
+ Number of Slice LUTs:                  928  out of  239040     0%  
+    Number used as Logic:               604  out of  239040     0%  
+    Number used as Memory:              324  out of  73120     0%  
+       Number used as SRL:              324
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1692
+   Number with an unused Flip Flop:     453  out of   1692    26%  
+   Number with an unused LUT:           764  out of   1692    45%  
+   Number of fully used LUT-FF pairs:   475  out of   1692    28%  
+   Number of unique control sets:        90
+
+IO Utilization: 
+ Number of IOs:                          62
+ Number of bonded IOBs:                  46  out of    720     6%  
+    IOB Flip Flops/Latches:              16
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                6  out of    768     0%  
+    Number using Block RAM only:          6
+ Number of BUFG/BUFGCTRLs:                4  out of     32    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                                                  | Clock buffer(FF name)                                                                         | Load  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+-------+
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch                                                                                                | BUFG                                                                                          | 1192  |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch                                                                                                | BUFG                                                                                          | 96    |
+XCVR_Ref_Clock_in                                                                                                                                             | IBUF+IBUFDS_GTXE1+BUFG                                                                        | 60    |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL                                                                       | BUFG                                                                                          | 241   |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/CONTROL0<13>(Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)| NONE(*)(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC)| 1     |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT                                                                                               | NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD)                  | 1     |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                                                                                                                                                                                                | Buffer(FF name)                                                                                                                                                                                                                                                                                                                                                                   | Load  |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/N11(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/XST_VCC:P)| NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36)| 124   |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/N11(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/XST_VCC:P)| NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36)| 124   |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/N11(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/XST_VCC:P)| NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36)| 124   |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U_RAMB36/N11(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U_RAMB36/XST_VCC:P)| NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U_RAMB36)| 124   |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U_RAMB36/N11(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U_RAMB36/XST_VCC:P)| NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U_RAMB36)| 124   |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/N0(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/XST_GND:G) | NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36)| 72    |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/N0(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/XST_GND:G) | NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36)| 72    |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/N0(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/XST_GND:G) | NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36)| 72    |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U_RAMB36/N0(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U_RAMB36/XST_GND:G) | NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U_RAMB36)| 72    |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U_RAMB36/N0(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U_RAMB36/XST_GND:G) | NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U_RAMB36)| 72    |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_ECR_glue_set(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/XST_VCC:P)                                                                                                                                                                                                                                                                                        | NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36)| 20    |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/iCAP_WR_EN(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_INTCAP_F.U_CAPWE1:Q)                                                                                                                                                                                                                                                     | NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B18KGT0.u_ramb18/U_RAMB18E1)                                                                                                                                                                       | 8     |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.922ns (Maximum Frequency: 203.180MHz)
+   Minimum input arrival time before clock: 1.871ns
+   Maximum output required time after clock: 0.659ns
+   Maximum combinational path delay: No path found
+
+=========================================================================
+Timing constraint: TS_D2_TO_T2 = FROM TIMEGRP "D2_CLK" TO TIMEGRP "FFS" TIG;
+  Clock period: 1.490ns (frequency: 671.006MHz)
+  Total number of paths / destination ports: 3 / 3
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Delay:                  -13.510ns
+  Source:               Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:          Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_SYNC/G_SYNC_WORD[6].I_EQ0.U_FDR (FF)
+  Data Path Delay:      1.490ns (Levels of Logic = 1)
+  Source Clock:         Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT rising at 0.000ns
+  Destination Clock:    Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising at 0.000ns
+
+  Data Path: Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF) to Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_SYNC/G_SYNC_WORD[6].I_EQ0.U_FDR (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.317   0.351  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              8   0.079   0.378  U0/U_ICON/U_SYNC/U_iDATA_CMD_n (U0/U_ICON/U_SYNC/iDATA_CMD_n)
+     FDR:R                     0.365          U0/U_ICON/U_SYNC/G_SYNC_WORD[6].I_EQ0.U_FDR
+    ----------------------------------------
+    Total                      1.490ns (0.761ns logic, 0.729ns route)
+                                       (51.1% logic, 48.9% route)
+
+=========================================================================
+Timing constraint: TS_J2_TO_D2 = FROM TIMEGRP "FFS" TO TIMEGRP "D2_CLK" TIG;
+  Clock period: 1.086ns (frequency: 920.641MHz)
+  Total number of paths / destination ports: 1 / 1
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Delay:                  -13.916ns
+  Source:               Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:          Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Data Path Delay:      1.086ns (Levels of Logic = 1)
+  Source Clock:         Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT rising at 0.000ns
+  Destination Clock:    Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT rising at 0.000ns
+
+  Data Path: Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF) to Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.317   0.351  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.079   0.339  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                    -0.002          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      1.086ns (0.396ns logic, 0.690ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: TS_J3_TO_D2 = FROM TIMEGRP "FFS" TO TIMEGRP "D2_CLK" TIG;
+  Clock period: 1.086ns (frequency: 920.641MHz)
+  Total number of paths / destination ports: 1 / 1
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Delay:                  -13.916ns
+  Source:               Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:          Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Data Path Delay:      1.086ns (Levels of Logic = 1)
+  Source Clock:         Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT rising at 0.000ns
+  Destination Clock:    Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT rising at 0.000ns
+
+  Data Path: Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF) to Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.317   0.351  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.079   0.339  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                    -0.002          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      1.086ns (0.396ns logic, 0.690ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: TS_J4_TO_D2 = FROM TIMEGRP "FFS" TO TIMEGRP "D2_CLK" TIG;
+  Clock period: 1.086ns (frequency: 920.641MHz)
+  Total number of paths / destination ports: 1 / 1
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Delay:                  -13.916ns
+  Source:               Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:          Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Data Path Delay:      1.086ns (Levels of Logic = 1)
+  Source Clock:         Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT rising at 0.000ns
+  Destination Clock:    Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT rising at 0.000ns
+
+  Data Path: Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF) to Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.317   0.351  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.079   0.339  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                    -0.002          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      1.086ns (0.396ns logic, 0.690ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 nS HIGH 15 nS
+  Clock period: 1.490ns (frequency: 671.006MHz)
+  Total number of paths / destination ports: 4440 / 552
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Slack:                  13.510ns
+  Source:               Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:          Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_SYNC/G_SYNC_WORD[6].I_EQ0.U_FDR (FF)
+  Data Path Delay:      1.490ns (Levels of Logic = 1)
+  Source Clock:         Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT rising at 0.000ns
+  Destination Clock:    Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising at 30.000ns
+
+  Data Path: Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF) to Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_SYNC/G_SYNC_WORD[6].I_EQ0.U_FDR (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.317   0.351  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              8   0.079   0.378  U0/U_ICON/U_SYNC/U_iDATA_CMD_n (U0/U_ICON/U_SYNC/iDATA_CMD_n)
+     FDR:R                     0.365          U0/U_ICON/U_SYNC/G_SYNC_WORD[6].I_EQ0.U_FDR
+    ----------------------------------------
+    Total                      1.490ns (0.761ns logic, 0.729ns route)
+                                       (51.1% logic, 48.9% route)
+
+=========================================================================
+Timing constraint: TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" TO TIMEGRP "J_CLK" 15 nS
+  Clock period: 1.490ns (frequency: 671.006MHz)
+  Total number of paths / destination ports: 18 / 18
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Slack:                  13.510ns
+  Source:               Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:          Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_SYNC/G_SYNC_WORD[6].I_EQ0.U_FDR (FF)
+  Data Path Delay:      1.490ns (Levels of Logic = 1)
+  Source Clock:         Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT rising at 0.000ns
+  Destination Clock:    Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising at 15.000ns
+
+  Data Path: Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF) to Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_SYNC/G_SYNC_WORD[6].I_EQ0.U_FDR (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.317   0.351  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              8   0.079   0.378  U0/U_ICON/U_SYNC/U_iDATA_CMD_n (U0/U_ICON/U_SYNC/iDATA_CMD_n)
+     FDR:R                     0.365          U0/U_ICON/U_SYNC/G_SYNC_WORD[6].I_EQ0.U_FDR
+    ----------------------------------------
+    Total                      1.490ns (0.761ns logic, 0.729ns route)
+                                       (51.1% logic, 48.9% route)
+
+=========================================================================
+Timing constraint: TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" TO TIMEGRP "U_CLK" 15 nS
+  Clock period: 1.086ns (frequency: 920.641MHz)
+  Total number of paths / destination ports: 1 / 1
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Slack:                  13.914ns
+  Source:               Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:          Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Data Path Delay:      1.086ns (Levels of Logic = 1)
+  Source Clock:         Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT rising at 0.000ns
+  Destination Clock:    Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT rising at 15.000ns
+
+  Data Path: Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF) to Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.317   0.351  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.079   0.339  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                    -0.002          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      1.086ns (0.396ns logic, 0.690ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: TS_J_TO_D = FROM TIMEGRP "J_CLK" TO TIMEGRP "D_CLK" TIG;
+  Clock period: 4.922ns (frequency: 203.180MHz)
+  Total number of paths / destination ports: 4473 / 525
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Delay:                  -26.289ns
+  Source:               Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/I_MULT_ROW.U_RD_COL_ADDR_DLY/G_REG_BIT[0].U_FDRE (FF)
+  Destination:          Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_TDO_reg (FF)
+  Data Path Delay:      4.922ns (Levels of Logic = 8)
+  Source Clock:         Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising at 0.000ns
+  Destination Clock:    Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising at 0.000ns
+
+  Data Path: Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/I_MULT_ROW.U_RD_COL_ADDR_DLY/G_REG_BIT[0].U_FDRE (FF) to Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_TDO_reg (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            25   0.317   0.825  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/I_MULT_ROW.U_RD_COL_ADDR_DLY/G_REG_BIT[0].U_FDRE (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_col_addr_dly<0>)
+     LUT6:I0->O            1   0.061   0.566  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I7.U_MUX128/Mmux_O_121 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I7.U_MUX128/Mmux_O_121)
+     LUT6:I2->O            1   0.061   0.000  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I7.U_MUX128/Mmux_O_7 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I7.U_MUX128/Mmux_O_7)
+     MUXF7:I1->O           1   0.211   0.426  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I7.U_MUX128/Mmux_O_6_f7 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I7.U_MUX128/Mmux_O_6_f7)
+     LUT3:I1->O            1   0.061   0.000  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I7.U_MUX128/Mmux_O_31 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I7.U_MUX128/Mmux_O_3)
+     MUXF7:I1->O           1   0.211   0.426  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I7.U_MUX128/Mmux_O_2_f7 (U0/I_NO_D.U_ILA/iDATA_DOUT)
+     LUT3:I1->O            1   0.061   0.426  U0/I_NO_D.U_ILA/U_DOUT (CONTROL<3>)
+     end scope: 'Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx:CONTROL<3>'
+     begin scope: 'Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon:CONTROL0<3>'
+     LUT6:I4->O            1   0.061   0.000  U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16/Mmux_O11 (U0/U_ICON/iTDO_next)
+     FDE:D                    -0.002          U0/U_ICON/U_TDO_reg
+    ----------------------------------------
+    Total                      4.922ns (2.253ns logic, 2.669ns route)
+                                       (45.8% logic, 54.2% route)
+
+=========================================================================
+Timing constraint: TS_D_TO_J = FROM TIMEGRP "D_CLK" TO TIMEGRP "J_CLK" TIG;
+  Clock period: 1.490ns (frequency: 671.006MHz)
+  Total number of paths / destination ports: 904 / 790
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Delay:                  -13.510ns
+  Source:               Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:          Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_SYNC/G_SYNC_WORD[6].I_EQ0.U_FDR (FF)
+  Data Path Delay:      1.490ns (Levels of Logic = 1)
+  Source Clock:         Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT rising at 0.000ns
+  Destination Clock:    Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising at 0.000ns
+
+  Data Path: Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_iDATA_CMD (FF) to Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_SYNC/G_SYNC_WORD[6].I_EQ0.U_FDR (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.317   0.351  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              8   0.079   0.378  U0/U_ICON/U_SYNC/U_iDATA_CMD_n (U0/U_ICON/U_SYNC/iDATA_CMD_n)
+     FDR:R                     0.365          U0/U_ICON/U_SYNC/G_SYNC_WORD[6].I_EQ0.U_FDR
+    ----------------------------------------
+    Total                      1.490ns (0.761ns logic, 0.729ns route)
+                                       (51.1% logic, 48.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch
+--------------------------------------------------------------+---------+---------+---------+---------+
+                                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------------------+---------+---------+---------+---------+
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch|    3.243|         |         |         |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch|    2.193|         |         |         |
+XCVR_Ref_Clock_in                                             |    1.989|         |         |         |
+--------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch
+---------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------------------------------------+---------+---------+---------+---------+
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch                         |    1.619|         |         |         |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch                         |    2.716|         |         |         |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    2.824|         |         |         |
+XCVR_Ref_Clock_in                                                                      |    1.594|         |         |         |
+---------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/CONTROL0<13>
+--------------------------------------------------------------+---------+---------+---------+---------+
+                                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------------------+---------+---------+---------+---------+
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch|         |         |    1.122|         |
+--------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL
+---------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------------------------------------+---------+---------+---------+---------+
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch                         |    2.477|         |         |         |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/CONTROL0<13>                          |         |    2.724|         |         |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    4.922|         |         |         |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT                        |    1.490|         |         |         |
+---------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT
+---------------------------------------------------------------+---------+---------+---------+---------+
+                                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------------+---------+---------+---------+---------+
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/iUPDATE_OUT|    1.086|         |         |         |
+---------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XCVR_Ref_Clock_in
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+XCVR_Ref_Clock_in|    2.768|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.93 secs
+ 
+--> 
+
+Total memory usage is 4575024 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   63 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
+
